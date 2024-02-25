@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container text-center">
+    <div class="row justify-content-end">
+        <div class="paragraph-div">
+            <p class="p col-5">This is your work To Do List</p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row justify-content-start align-items-center">
+        <div class = "col-6 container">
+            <img src="images/work.svg" class="container" height="200px" width="200px">
+            <p class="container work-body-p">Busy day at work? No worries, organize your tasks while you tak a sip of your coffee!</p>
+        </div>
+        <div class = "col-6">
+            <div id="list-holder">
+                <% data.forEach(element => { %>
+                    <ul class="list-group text-center container"> 
+                        <li class="container list-group-item list-group-item-action list-group-item-secondary">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-4 col-md-6 col-lg-8">
+                                    <%= element.todo %>
+                                </div>
+                                <div class="col-auto">
+                                    <form action="/workdelete" method="POST" class="col-auto">
+                                        <input type="hidden" name="todoId" value=" <%=element.id %>">
+                                        <input type="hidden" name="todoTask" value="<%=element.todo %>">
+                                        <button class="delete btn btn-outline-danger" type="submit">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                <%});%>
+            </div>
+            <form action="/createworktodo" method="POST">
+                <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Name</label>
+                    <input type="text" name="todoTask" class="form-control" id="autoSizingInput" placeholder="Write your task">
+                </div>
+                <div class="col-auto">
+                    <div>
+                        <button type="submit" id="submit-button" class="btn btn-outline-success">Add Work To Do</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>

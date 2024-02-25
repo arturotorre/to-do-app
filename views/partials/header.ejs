@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%# jQuery %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <%# Bootstrap %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <%# CSS Stylesheet %>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <%# Tab Icon SVG %>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
+    <%# Title Font %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+
+    <%# Navbar %>
+    <nav class="navbar fixed-top nav-color">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Select the To Do List you'd like to see!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link navbar-page" href="/" method="GET">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-page" aria-current="page" href="/work" method="GET">Work</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <%# Title %>
+    <div class="title container">
+        <img class="title-image" src="images/check-list-list-svgrepo-com.svg" alt="">
+        <h1>Welcome to your TO DO LIST</h1>
+    </div>
+
+    
+</head>
+<body>

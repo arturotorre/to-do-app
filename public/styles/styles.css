@@ -1,0 +1,90 @@
+body{
+    background-color: #FEFBE0;
+    font-family: 'Baloo 2', cursive;
+}
+
+h1{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    display: flex;
+
+}
+
+li{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form{
+    margin-bottom: 0;
+}
+
+input{
+    margin-top: 1rem;
+}
+
+input[type="text"]{
+    font-size:1.5rem;
+}
+
+#offcanvasNavbarLabel{
+    font-size: 2rem;
+}
+
+.navbar-page{
+    font-size: 1.5rem;
+}
+
+.title{
+    background-color: #ffd73f;
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title-image{
+    height: 4rem;
+    display: flex;
+    
+}
+
+.nav-color{
+    background-color: #FEFBE0;
+}
+
+.offcanvas{
+    background-color: #FEFBE0;
+}
+
+.paragraph-div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.body-p{
+    font-size: 2rem;
+}
+
+.work-body-p{
+    font-size: 2rem;
+}
+
+.work-image{
+    margin-bottom: 6rem;
+}
+
+#submit-button{
+    margin-top: 1rem;
+}
+
